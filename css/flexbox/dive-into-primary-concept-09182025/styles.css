@@ -1,0 +1,32 @@
+.flex-container {
+    display: flex; /* activates flexbox */
+    height: 800px;
+    width: 800px;
+    background-color: lightgray;
+    color: white; /* will be inherited by flex items */
+    font-size: 30px; /* will be inherited by flex items */
+}
+
+.flex-item-1 {
+    background-color: plum;
+    height: 100px;
+    width: 200px;
+}
+
+.flex-item-2 {
+    background-color: lightpink;
+    height: 150px;
+    width: 100px;
+}
+
+.flex-item-3 {
+    background-color: violet;
+    height: 300px;
+    width: 250px;
+}
+
+.flex-item-4 {
+    background-color: lightblue;
+    height: 150px;
+    width: 200px;
+}
