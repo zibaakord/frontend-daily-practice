@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>DOM Manipulation Practice</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 40px auto;
+      line-height: 1.6;
+      padding: 0 16px;
+    }
+
+    .controls {
+      margin: 12px 0 24px;
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    button {
+      padding: 8px 12px;
+      border: 1px solid #444;
+      background: #f3f3f3;
+      cursor: pointer;
+    }
+
+    .highlight {
+      background-color: yellow;
+      font-weight: 700;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 12px 0;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .row {
+      margin-bottom: 18px;
+    }
+
+    input[type="text"] {
+      padding: 8px;
+      width: 240px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="row">
+    <h1 id="mainTitle">Welcome to DOM Practice</h1>
+    <div class="controls">
+      <button id="changeTitleBtn">Change Title</button>
+    </div>
+  </div>
+
+  <div class="row">
+    <p id="para">This is a sample paragraph for DOM manipulation practice. Try changing my color or highlighting me!</p>
+    <div class="controls">
+      <button id="makeRedBtn">Make Paragraph Red</button>
+      <button id="toggleHighlightBtn">Toggle Highlight</button>
+    </div>
+  </div>
+
+  <div class="row">
+    <img id="theImage" src="https://via.placeholder.com/600x200?text=Original+Image" alt="Practice image" />
+    <div class="controls">
+      <button id="changeImageBtn">Change Image</button>
+    </div>
+  </div>
+
+  <div class="row">
+    <h3>Items</h3>
+    <ul id="itemList">
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ul>
+    <div class="controls">
+      <button id="addItemBtn">Add New Item</button>
+      <button id="removeFirstBtn">Remove First Item</button>
+    </div>
+  </div>
+
+  <div class="row">
+    <input id="newItemInput" type="text" placeholder="Type new item text..." />
+    <button id="addFromInputBtn">Add From Input</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
